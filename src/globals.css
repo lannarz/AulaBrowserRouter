@@ -1,0 +1,21 @@
+.barraHeader{
+  display: flex;
+  background-color: gray;
+  justify-content: space-between;
+}
+
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .navbar-menu li{
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+ 
+.sublinhado{
+    text-decoration: none; 
+    color: #fff; 
+}  
