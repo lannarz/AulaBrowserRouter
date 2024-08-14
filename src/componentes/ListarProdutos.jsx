@@ -1,7 +1,15 @@
-export default function ListarProdutos(){
+export default function ListarProdutos( {produtos}){
     return(
-        <p>
-            
-        </p>
+        <div>
+            {
+                produtos.map((obj)=>
+                    <div key={obj.id}>
+                        <p>{obj.titulo}</p>
+                        <p>{obj.valor}</p>
+                    </div>
+                )
+            }
+        </div>
     )
+
 }

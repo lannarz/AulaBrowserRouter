@@ -1,14 +1,32 @@
 import Header from "../componentes/Header";
-//aqui
 import Footer from "../componentes/Footer";
-import ListarProdutos from "../componentes/ListarProdutos";
+import ListarProdutos from "../componentes/ListarProdutos.jsx";
 import {Carousel} from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import "./../globals.css";
 import "./../script.js";
+import { useState } from "react";
 
 export default function Home(){
-    return(
+
+    const[listaCare] = useState([
+        {
+            id:1,
+            titulo: "minha maquiagem 1",
+            valor: "R$50,00"
+        },
+        {
+            id:2,
+            titulo: "minha maquiagem 2",
+            valor: "R$50,00"
+        },
+        {
+            id:3,
+            titulo: "minha maquiagem 3",
+            valor: "R$50,00"
+        }
+    ]);    
+return(
         <>
             <Header/>
             <h3 className="titulopagina">Home</h3>
@@ -32,9 +50,15 @@ export default function Home(){
                </div> 
 
                <div>
-                    <img src="https://creamy.vtexassets.com/assets/vtex.file-manager-graphql/images/826183e7-9280-46fa-9e26-702272dde4cd___bc63d95b514e4c6966dc58ca0890f317.jpg"/>
+                    <img src="https://creamy.vtexassets.com/assets/vtex.file-manager-graphql/images/2d7f4cf0-4075-40e7-bbc6-43b75dade0c7___5a46ebd4ea820e2dd87af87ee7091eff.jpg"/>
                </div>  
             </Carousel>
+
+            <div>
+               <ListarProdutos produtos={listaCare} />
+            </div>
+
+            <Footer/>
         </>      
     )
 }
