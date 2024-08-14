@@ -1,13 +1,17 @@
 import Header from "../componentes/Header";
+//aqui
+import Footer from "../componentes/Footer";
+import ListarProdutos from "../componentes/ListarProdutos";
 import {Carousel} from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import "./../globals.css";
+import "./../script.js";
 
 export default function Home(){
     return(
         <>
             <Header/>
-            <h1>Home</h1>
+            <h3 className="titulopagina">Home</h3>
             <Carousel
                 infiniteLoop
                 useKeyboardArrows

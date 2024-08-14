@@ -1,5 +1,7 @@
+
+
 export default function Oferta(){
     return(
-        <h1>Ofertas</h1>
+        <h2 className="titulopagina">Ofertas</h2>
     )
 }

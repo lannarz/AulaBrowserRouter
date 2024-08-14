@@ -1,5 +1,5 @@
 export default function Produto(){
     return(
-        <h1>Produtos</h1>
+        <h2 className="titulopagina">Produtos</h2>
     )
 }
