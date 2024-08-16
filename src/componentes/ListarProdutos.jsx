@@ -3,9 +3,17 @@ export default function ListarProdutos( {produtos}){
         <div>
             {
                 produtos.map((obj)=>
-                    <div key={obj.id}>
-                        <p>{obj.titulo}</p>
-                        <p>{obj.valor}</p>
+                    <div className="quadradao">
+
+                    <div className="quadradinho" key={obj.id}>
+                        <img className="img-produtos" src={obj.imagem}/>
+
+                    <div className="separar">
+                        <p className="titulo-produto">{obj.titulo}</p>
+                        <p className="valor-produto">{obj.valor}</p>
+                    </div>
+                    </div>
+                        
                     </div>
                 )
             }

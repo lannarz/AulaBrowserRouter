@@ -7,7 +7,6 @@ export default function Header(){
 
                <div className="navbar-logo">
                 <img src="https://creamy.vtexassets.com/arquivos/creamyheaderlogoredesigner.svg"></img>
-                <button class="navbar-button"onclick="toggleMenu()">Menu</button>
                </div>
 
               <ul className="navbar-menu" >
