@@ -1,9 +1,9 @@
 export default function ListarProdutos( {produtos}){
     return(
-        <div>
+        <div className="quadradao">
             {
                 produtos.map((obj)=>
-                    <div className="quadradao">
+                    <div>
 
                     <div className="quadradinho" key={obj.id}>
                         <img className="img-produtos" src={obj.imagem}/>

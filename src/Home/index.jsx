@@ -35,15 +35,15 @@ export default function Home(){
         },
         {
             id:5,
-            imagem: "https://creamy.vtexassets.com/arquivos/ids/156983-768-768/01.jpg?v=638433748836400000",
-            titulo: "ÁCIDO MANDÉLICO",
-            valor: "R$79,90"
-        },
-        {
-            id:5,
             imagem: "https://creamy.vtexassets.com/arquivos/ids/156922-768-768/01.png?v=638429149457670000",
             titulo: "VITAMINA C",
             valor: "R$99,90"
+        },
+        {
+            id:11,
+            imagem: "https://creamy.vtexassets.com/arquivos/ids/156953-768-768/01.jpg?v=638430855006630000",
+            titulo: "ÁCIDO TRANEXÂMICO",
+            valor: "R$71,91"
         },
         {
             id:7,
@@ -56,7 +56,33 @@ export default function Home(){
             imagem: "https://creamy.vtexassets.com/arquivos/ids/157070-768-768/01.jpg?v=638446358897930000",
             titulo: "CALMING CREAM",
             valor: "R$49,90"
-        }
+        },
+        {
+            id:9,
+            imagem: "https://creamy.vtexassets.com/arquivos/ids/156808-300-300/01.png?v=638398150752630000",
+            titulo: "DUO PROTETOR + CREAM",
+            valor: "R$109,80"
+        },
+        {
+            id:10,
+            imagem: "https://creamy.vtexassets.com/arquivos/ids/157188-768-768/carrossel---limpador-glicerinado---01.jpg?v=638556983363730000",
+            titulo: "GEL FACIAL GLICELINADO",
+            valor: "R$59,90"
+        },
+    
+        {
+            id:11,
+            imagem: "https://creamy.vtexassets.com/arquivos/ids/156690-768-768/01.png?v=638291841499830000",
+            titulo: "VITAMINA C",
+            valor: "R$99,90"
+        },
+        {
+            id:12,
+            imagem: "https://creamy.vtexassets.com/arquivos/ids/157218-768-768/latte.png?v=638582113500230000",
+            titulo: "LIP BALM LATTE 10G",
+            valor: "R$36,90"
+        },
+        
     ]);    
 return(
         <>

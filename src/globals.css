@@ -38,20 +38,24 @@ body{
 
 .titulopagina{
   color: #838282;
-  margin-left: 22px;
   font-weight: bold;
   font-size: 25px;
+  margin-left: 13%;
 }
 
 .quadradinho{
   float: left;
   border: 1px solid #ccc;
-  padding: 10px;
+  margin-bottom: 30px;
+  padding-bottom: 2px;
   
 }
 
+
 .quadradao{
-  margin-left: 10%;
+  
+  margin-left: 13%;
+  margin-right: 13%;
 }
 
 .titulo-produto{
@@ -73,6 +77,7 @@ body{
 
 .separar{
   border-top: 1px solid #bbbaba;
+  padding-left: 10px;
 }
 
 footer{
@@ -104,22 +109,45 @@ footer{
 }
 
 
-@media screen and (max-width: 1200px){
-  .quadradinho{
-    width: 25%;
-  }
+@media screen and (max-width: 2500px){
+ .quadradao{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+ }
 }
 
+@media screen and (max-width: 1200px){
+  .quadradao{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+  }
+ }
+ 
+
+@media screen and (max-width: 900px){
+ .quadradao{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ }
+}
+
+
 @media screen and (max-width: 600px) {
+  .quadradao{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   }
+
   .navbar-logo{
      width:100% ;
      justify-content: space-between;
+     margin-top: 35px;
    }
 
    .navbar-menu{
-     flex-direction: column;
-     padding: 0;
-     display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -30px;
    }
    
    
